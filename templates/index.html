@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>Thyroid Prediction</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-primary mb-2">
+            <div class="container-fluid">
+              <span class="navbar-brand mb-0 h3">Thyroid Prediction</span>
+            </div>
+          </nav>
+        
+        <form class = "px-5">
+            <div class='row mb-2'>
+                <label class='col-md-2 col-form-label' for="T3">T3:</label>
+                <input class='col-md-10 form-control' type="text" id="T3" name="T3">
+            </div>
+
+            <div class="row mb-2">
+                <label class='col-md-2 col-form-label' for="TSH">TSH:</label>
+                <input class='col-md-10 form-control' type="text" id="TSH" name="TSH">
+            </div>
+
+            <div class="row mb-2">
+                <label class='col-md-2 col-form-label' for="TT4">TT4:</label>
+                <input class='col-md-10 form-control' type="text" id="TT4" name="TT4">
+            </div>
+
+            <div class="row mb-2">
+                <label class='col-md-2 col-form-label' for="FTI">FTI:</label>
+                <input class='col-md-10 form-control' type="text" id="FTI" name="FTI">
+            </div>
+
+            <div class = 'row mb-2'>
+                    <label class='col-md-2 col-form-label' for="goiter">Goiter:</label>
+                    <select class='col-md-3 form-control' id="" name="goiter">
+                        <option value="1">True</option>
+                        <option value="0">False</option>
+                    </select>
+                    <div class="col-md-2"></div>
+                    <label class='col-md-2 col-form-label' for="FTI_measured">FTI Measured:</label>
+                    <select class='col-md-3 form-control' id="FTI_measured" name="FTI_measured">
+                        <option value="1">True</option>
+                        <option value="0">False</option>
+                    </select>     
+            </div>
+
+            <div class = 'row mb-2'>
+                    <label class='col-md-2 col-form-label' for="T4U_measured">T4U Measured:</label>
+                    <select class='col-md-3 form-control' id="T4U_measured" name="T4U_measured">
+                        <option value="1">True</option>
+                        <option value="0">False</option>
+                    </select>
+                    <div class="col-md-2"></div>
+                    <label class='col-md-2 col-form-label' for="T3_measured">T3 Measured:</label>
+                    <select class='col-md-3 form-control' id="T3_measured" name="T3_measured">
+                        <option value="1">True</option>
+                        <option value="0">False</option>
+                    </select>
+            </div>
+
+            <div class='row mb-2'>                
+                    <label class='col-md-2 col-form-label' for="query_hypothyroid">Query Hypothyroid:</label>
+                    <select class='col-md-3 form-control' id="query_hypothyroid" name="query_hypothyroid">
+                        <option value="1">True</option>
+                        <option value="0">False</option>
+                    </select>             
+                    <div class="col-md-2"></div>
+                    <label class='col-md-2 col-form-label' for="psych">Psych:</label>
+                    <select class='col-md-3 form-control' id="psych" name="psych">
+                        <option value="1">True</option>
+                        <option value="0">False</option>
+                    </select>             
+            </div>
+
+            <div class='row mb-2'>
+                    <label class='col-md-2 col-form-label' for="thyroid_surgery">Thyroid Surgery:</label>
+                    <select class='col-md-3 form-control' id="thyroid_surgery" name="thyroid_surgery">
+                        <option value="1">True</option>
+                        <option value="0">False</option>
+                    </select>
+                    <div class="col-md-2"></div>
+                    <label class='col-md-2 col-form-label' for="on_thyroxine">On Thyroxine:</label>
+                    <select class='col-md-3 form-control' id="on_thyroxine" name="on_thyroxine">
+                        <option value="1">True</option>
+                        <option value="0">False</option>
+                    </select>
+            </div>
+
+            <div class="row mb-2">
+                    <label class='col-md-2 col-form-label' for="sex">Sex:</label>
+                    <select class='col-md-3 form-control' id="sex" name="sex">
+                        <option value="1">Male</option>
+                        <option value="0">Female</option>
+                    </select>
+                    <div class="col-md-2"></div>
+                    <label class='col-md-2 col-form-label' for="query_hyperthyroid">Query Hyperthyroid:</label>
+                    <select class='col-md-3 form-control' id="query_hyperthyroid" name="query_hyperthyroid">
+                        <option value="1">True</option>
+                        <option value="0">False</option>
+                    </select>
+            </div>
+
+            <div class="row mb-2">
+                    <label class='col-md-2 col-form-label' for="pregnant">Pregnant:</label>
+                    <select class='col-md-3 form-control' id="pregnant" name="pregnant">
+                        <option value="1">True</option>
+                        <option value="0">False</option>
+                    </select>
+                    <div class="col-md-2"></div>
+                    <label class='col-md-2 col-form-label' for="tumor">Tumor:</label>
+                    <select class='col-md-3 form-control' id="tumor" name="tumor">
+                        <option value="1">True</option>
+                        <option value="0">False</option>
+                    </select>
+            </div>
+            <div class = "row mb-2">
+                <input class="btn btn-primary col-md-12 btn-lg" type="submit" value="Predict Now!">
+            </div>
+
+            
+            <div class="row mb-2">
+                {% if res != 'none' %}
+                <input class = "col-md-12 form-control" type="text" value="{{res}}">
+                {% endif %}
+            </div>
+        </form>
+    </body>
+</html>
